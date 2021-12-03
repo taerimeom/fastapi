@@ -1,10 +1,14 @@
-import enum
 from typing import Optional
 from fastapi import FastAPI, Response, status
 from fastapi.exceptions import HTTPException
 from fastapi.params import Body
 from pydantic import BaseModel
 from random import randrange
+
+# to activate venv: source venv/bin/activate
+# exit: deactivate
+# to run
+# uvicorn app.main:app --reload
 
 app = FastAPI()
 
